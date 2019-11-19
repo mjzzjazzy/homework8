@@ -17,7 +17,6 @@ Parallelogram::Parallelogram(const double side1,
 //----------------------------------------------------------------------------//
 double Parallelogram::area() const
 {
-  std::cout << ">>>parallelogram area!!!" << std::endl;  
   return std::sin(this->_small_angle)*this->_side1*this->_side2;
 }
 
@@ -25,6 +24,6 @@ double Parallelogram::area() const
 //----------------------------------------------------------------------------//
 std::ostream& operator<< (std::ostream &out, Parallelogram *p)
 {
-  out << "**** I am a " << p->name();
+  out << "**** I am a " << p->name() << " whose area is " << p->area();
   return out;
 }

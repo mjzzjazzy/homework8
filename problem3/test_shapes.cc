@@ -3,6 +3,8 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
+// Put some other includes here...
+
 #include "Parallelogram.hh"
 #include "Rectangle.hh"
 #include "Square.hh"
@@ -35,7 +37,7 @@ int main(int argc, char* argv[])
   // **************
 
   // Now, use a loop to print the shape in the current order.
-  
+
   // **************
   // YOUR CODE HERE
   // **************
@@ -48,5 +50,3 @@ int main(int argc, char* argv[])
 
   return 0;
 }
-
-
