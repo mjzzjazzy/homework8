@@ -4,6 +4,6 @@
 /**
   merge sort of a double array in increasing order
 */
-void merge_sort(double *a, int n);
+void merge_sort(double *a, int n, int low);
 
 #endif // MERGE_SORT_HH_

@@ -1,0 +1,28 @@
+!SESSION 2019-12-05 14:53:57.565 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=11.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 4 77 2019-12-05 14:58:11.777
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2019-12-05 14:58:11.778
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2019-12-05 14:58:11.780
+!MESSAGE /home/student/homework8 overlaps the workspace location: /home/student/homework8
+
+!ENTRY org.eclipse.core.resources 4 77 2019-12-05 14:59:11.631
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2019-12-05 14:59:11.631
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2019-12-05 14:59:11.631
+!MESSAGE /home/student/homework8 overlaps the workspace location: /home/student/homework8
+
+!ENTRY org.eclipse.core.resources 4 77 2019-12-05 15:00:04.494
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2019-12-05 15:00:04.494
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2019-12-05 15:00:04.494
+!MESSAGE /home/student/homework8/problem1 overlaps the location of another project: 'problem1'

@@ -4,7 +4,9 @@
 #include <cmath>
 
 // Put some other includes here...
-
+#include <algorithm>
+#include <vector>
+#include <assert.h>
 #include "Parallelogram.hh"
 #include "Rectangle.hh"
 #include "Square.hh"
@@ -32,21 +34,22 @@ int main(int argc, char* argv[])
   // Now, sort these shapes in increasing order of area
   // using the sort function provided by <algorithm>. 
 
-  // **************
-  // YOUR CODE HERE
-  // **************
+  std::sort (shapes.begin(),shapes.end(),Parallelogram::lessThan());
 
   // Now, use a loop to print the shape in the current order.
 
-  // **************
-  // YOUR CODE HERE
-  // **************
+  for(int i=0; i<4; i++){
+    std::cout<<shapes[i]->area()<<std::endl;
+  }
 
   // A sanity check!
   assert(std::abs(shapes[0]->area()-1.0)<1e-14); 
 
   // Make sure to clean up any memory... use valgrind if you're
   // not sure!
+  for(int i=0; i<4; i++){
+    delete shapes[i];
+  }
 
   return 0;
 }

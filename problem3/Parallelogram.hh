@@ -26,6 +26,13 @@ class Parallelogram
     // virtual means derived classes can override this definition
     virtual void some_pure_virtual_method() const = 0;
 
+    struct lessThan {
+      bool operator()(const Parallelogram* left, const Parallelogram* right) const
+      {
+        return left->area() < right->area();
+      }
+    };
+
   protected:
 
     double _side1;

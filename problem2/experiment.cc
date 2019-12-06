@@ -10,20 +10,20 @@ void run_experiment(const int n, const int m)
 
   // create the master copy of the array
   double *x = new double[n];
-  for (int i = 0; i < n; ++i)
+  for (int i = 0; i < n; i++)
   {
     x[i] = std::rand()*scale;
   }
 
   double *y = new double[n];
-  for (int trial = 0; trial < m; ++trial)
+  for (int trial = 0; trial < m; trial++)
   {
     // copy the array
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; i++)
       y[i] = x[i];
 
     // sort the array
-    merge_sort(y, n);
+    merge_sort(y, n, 0);
   }
 
 }
